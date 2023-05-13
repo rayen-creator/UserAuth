@@ -4,7 +4,4 @@ module.exports = {
     PASSWORD: "",
     DB: "springang",
     dialect: 'mysql',
-
-
-
 }

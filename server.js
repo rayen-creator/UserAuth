@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const db = require("./app/models");
-
 var corsOptions = {
     origin: "http://localhost:4200"
 };
@@ -26,6 +25,7 @@ app.get("/", (req, res) => {
     res.status(200);
     res.send("********** Welcome to root URL of Server ********** ");
 });
+
 // routes
 require('./app/routes/auth.routes')(app);
 
